@@ -1,1 +1,3 @@
-Zabbix template for HP LaserJet Flow E87640 SNMP v2. Created in Zabbix 4.2.
+template for HP PageWide Pro 452dw
+SNMP v2
+Targets Zabbix 5.0
