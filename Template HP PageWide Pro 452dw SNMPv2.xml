@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
-    <version>4.2</version>
-    <date>2019-10-25T19:39:56Z</date>
+    <version>5.0</version>
+    <date>2024-11-22T16:45:00Z</date>
     <groups>
         <group>
             <name>Templates/Printers</name>
@@ -9,8 +9,8 @@
     </groups>
     <templates>
         <template>
-            <template>Template HP LaserJet Flow E87640 SNMPv2</template>
-            <name>Template HP LaserJet Flow E87640 SNMPv2</name>
+            <template>Template HP PageWide Pro 452dw</template>
+            <name>Template HP PageWide Pro 452dw</name>
             <description/>
             <groups>
                 <group>
@@ -89,11 +89,11 @@
                     <master_item/>
                 </item>
                 <item>
-                    <name>Cyan Cartridge HP W9051MC Toner Levels</name>
+                    <name>Yellow Cartridge HP W9051MC Toner Levels</name>
                     <type>4</type>
                     <snmp_community>public</snmp_community>
                     <snmp_oid>.1.3.6.1.2.1.43.11.1.1.9.1.2</snmp_oid>
-                    <key>prtMarkerSuppliesLevel.1.2[Cyan Cartridge HP W9051MC]</key>
+                    <key>prtMarkerSuppliesLevel.1.2[Yellow Cartridge HP W9051MC]</key>
                     <delay>1h</delay>
                     <history>90d</history>
                     <trends>365d</trends>
@@ -207,11 +207,11 @@
                     <master_item/>
                 </item>
                 <item>
-                    <name>Yellow Cartridge HP W9052MC Toner Levels</name>
+                    <name>Cyan Cartridge HP W9052MC Toner Levels</name>
                     <type>4</type>
                     <snmp_community>public</snmp_community>
                     <snmp_oid>.1.3.6.1.2.1.43.11.1.1.9.1.3</snmp_oid>
-                    <key>prtMarkerSuppliesLevel.1.4[Yellow Cartridge HP W9052MC]</key>
+                    <key>prtMarkerSuppliesLevel.1.4[Cyan Cartridge HP W9052MC]</key>
                     <delay>1h</delay>
                     <history>90d</history>
                     <trends>365d</trends>
@@ -325,7 +325,7 @@
                     <master_item/>
                 </item>
                 <item>
-                    <name>Cyan Drum HP W9055MC Levels</name>
+                    <name>Yellow Drum HP W9055MC Levels</name>
                     <type>4</type>
                     <snmp_community>public</snmp_community>
                     <snmp_oid>.1.3.6.1.2.1.43.11.1.1.9.1.6</snmp_oid>
@@ -443,11 +443,11 @@
                     <master_item/>
                 </item>
                 <item>
-                    <name>Yellow Drum HP W9055MC Levels</name>
+                    <name>Cyan Drum HP W9055MC Levels</name>
                     <type>4</type>
                     <snmp_community>public</snmp_community>
                     <snmp_oid>.1.3.6.1.2.1.43.11.1.1.9.1.8</snmp_oid>
-                    <key>prtMarkerSuppliesLevel.1.8[Yellow Drum HP W9055MC Levels]</key>
+                    <key>prtMarkerSuppliesLevel.1.8[Cyan Drum HP W9055MC Levels]</key>
                     <delay>1h</delay>
                     <history>90d</history>
                     <trends>365d</trends>
@@ -561,11 +561,11 @@
                     <master_item/>
                 </item>
                 <item>
-                    <name>Cyan Developer Unit HP Z7Y69A</name>
+                    <name>Yellow Developer Unit HP Z7Y69A</name>
                     <type>4</type>
                     <snmp_community>public</snmp_community>
                     <snmp_oid>.1.3.6.1.2.1.43.11.1.1.9.1.10</snmp_oid>
-                    <key>prtMarkerSuppliesLevel.1.10[Cyan Developer Unit HP Z7Y69A]</key>
+                    <key>prtMarkerSuppliesLevel.1.10[Yellow Developer Unit HP Z7Y69A]</key>
                     <delay>1h</delay>
                     <history>90d</history>
                     <trends>365d</trends>
@@ -679,11 +679,11 @@
                     <master_item/>
                 </item>
                 <item>
-                    <name>Yellow Developer Unit HP Z7Y73A</name>
+                    <name>Cyan Developer Unit HP Z7Y73A</name>
                     <type>4</type>
                     <snmp_community>public</snmp_community>
                     <snmp_oid>.1.3.6.1.2.1.43.11.1.1.9.1.12</snmp_oid>
-                    <key>prtMarkerSuppliesLevel.1.12[Yellow Developer Unit HP Z7Y73A]</key>
+                    <key>prtMarkerSuppliesLevel.1.12[Cyan Developer Unit HP Z7Y73A]</key>
                     <delay>1h</delay>
                     <history>90d</history>
                     <trends>365d</trends>
@@ -984,7 +984,7 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.1[Black Cartridge HP W9050MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.2[Cyan Cartridge HP W9051MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.3[Magenta Cartridge HP W9053MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.4[Yellow Cartridge HP W9052MC].last()}&lt;=5</expression>
+            <expression>{Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.1[Black Cartridge HP W9050MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.2[Yellow Cartridge HP W9051MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.3[Magenta Cartridge HP W9053MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.4[Cyan Cartridge HP W9052MC].last()}&lt;=5</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>All Toner Cartridges Are Low on {HOST.NAME}</name>
@@ -1031,7 +1031,7 @@
             <dependencies>
                 <dependency>
                     <name>All Toner Cartridges Are Low on {HOST.NAME}</name>
-                    <expression>{Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.1[Black Cartridge HP W9050MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.2[Cyan Cartridge HP W9051MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.3[Magenta Cartridge HP W9053MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.4[Yellow Cartridge HP W9052MC].last()}&lt;=5</expression>
+                    <expression>{Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.1[Black Cartridge HP W9050MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.2[Yellow Cartridge HP W9051MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.3[Magenta Cartridge HP W9053MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.4[Cyan Cartridge HP W9052MC].last()}&lt;=5</expression>
                     <recovery_expression/>
                 </dependency>
             </dependencies>
@@ -1041,7 +1041,7 @@
             <expression>{Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.6[Black Drum HP W9055MC Levels].last()}&lt;=5</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>Cyan Drum is Low on {HOST.NAME}</name>
+            <name>Yellow Drum is Low on {HOST.NAME}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
@@ -1054,10 +1054,10 @@
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.2[Cyan Cartridge HP W9051MC].last()}&lt;=5</expression>
+            <expression>{Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.2[Yellow Cartridge HP W9051MC].last()}&lt;=5</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>Cyan Toner Low on {HOST.NAME}</name>
+            <name>Yellow Toner Low on {HOST.NAME}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
@@ -1069,7 +1069,7 @@
             <dependencies>
                 <dependency>
                     <name>All Toner Cartridges Are Low on {HOST.NAME}</name>
-                    <expression>{Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.1[Black Cartridge HP W9050MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.2[Cyan Cartridge HP W9051MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.3[Magenta Cartridge HP W9053MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.4[Yellow Cartridge HP W9052MC].last()}&lt;=5</expression>
+                    <expression>{Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.1[Black Cartridge HP W9050MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.2[Yellow Cartridge HP W9051MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.3[Magenta Cartridge HP W9053MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.4[Cyan Cartridge HP W9052MC].last()}&lt;=5</expression>
                     <recovery_expression/>
                 </dependency>
             </dependencies>
@@ -1123,17 +1123,17 @@
             <dependencies>
                 <dependency>
                     <name>All Toner Cartridges Are Low on {HOST.NAME}</name>
-                    <expression>{Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.1[Black Cartridge HP W9050MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.2[Cyan Cartridge HP W9051MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.3[Magenta Cartridge HP W9053MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.4[Yellow Cartridge HP W9052MC].last()}&lt;=5</expression>
+                    <expression>{Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.1[Black Cartridge HP W9050MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.2[Yellow Cartridge HP W9051MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.3[Magenta Cartridge HP W9053MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.4[Cyan Cartridge HP W9052MC].last()}&lt;=5</expression>
                     <recovery_expression/>
                 </dependency>
             </dependencies>
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.8[Yellow Drum HP W9055MC Levels].last()}&lt;=5</expression>
+            <expression>{Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.8[Cyan Drum HP W9055MC Levels].last()}&lt;=5</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>Yellow Drum is Low on {HOST.NAME}</name>
+            <name>Cyan Drum is Low on {HOST.NAME}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
@@ -1146,10 +1146,10 @@
             <tags/>
         </trigger>
         <trigger>
-            <expression>{Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.4[Yellow Cartridge HP W9052MC].last()}&lt;=5</expression>
+            <expression>{Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.4[Cyan Cartridge HP W9052MC].last()}&lt;=5</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
-            <name>Yellow Toner Low on {HOST.NAME}</name>
+            <name>Cyan Toner Low on {HOST.NAME}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
@@ -1161,7 +1161,7 @@
             <dependencies>
                 <dependency>
                     <name>All Toner Cartridges Are Low on {HOST.NAME}</name>
-                    <expression>{Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.1[Black Cartridge HP W9050MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.2[Cyan Cartridge HP W9051MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.3[Magenta Cartridge HP W9053MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.4[Yellow Cartridge HP W9052MC].last()}&lt;=5</expression>
+                    <expression>{Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.1[Black Cartridge HP W9050MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.2[Yellow Cartridge HP W9051MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.3[Magenta Cartridge HP W9053MC].last()}&lt;=5 and {Template HP LaserJet Flow E87640 SNMPv2:prtMarkerSuppliesLevel.1.4[Cyan Cartridge HP W9052MC].last()}&lt;=5</expression>
                     <recovery_expression/>
                 </dependency>
             </dependencies>
